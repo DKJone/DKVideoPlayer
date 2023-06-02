@@ -2,7 +2,7 @@ DKVideoPlayer
 ===  
 一款可以获取视频类APP和直播类APP播放地址的插件。  
 
- **更多介绍[前往查看📲](iosre.com/t/%E4%BB%8A%E5%A4%A9%E5%85%A8%E5%9C%BA%E7%9A%84%E6%B6%88%E8%B4%B9%E7%94%B1%E8%B5%B5%E5%85%AC%E5%AD%90%E4%B9%B0%E5%8D%95%EF%BC%81/22005)**  
+ **更多介绍[前往查看📲](https://iosre.com/t/%E4%BB%8A%E5%A4%A9%E5%85%A8%E5%9C%BA%E7%9A%84%E6%B6%88%E8%B4%B9%E7%94%B1%E8%B5%B5%E5%85%AC%E5%AD%90%E4%B9%B0%E5%8D%95%EF%BC%81/22005)**  
 
 #### 可以做什么？ 
 本项目支持大部分🔞视频类APP和直播类APP， 
