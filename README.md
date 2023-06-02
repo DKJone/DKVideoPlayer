@@ -19,7 +19,7 @@ DKVideoPlayer
 
 #### 安装方式(越狱)：   
  * [x] [越狱安装📲](./dkVideoPlayer#安装方式越狱)  
- * [x] [非越狱安装📲](./dkvideoLoader#安装方式越狱)  
+ * [x] [非越狱安装📲](./dkvideoLoader#安装方式非越狱)  
 #### 使用方法    
 **非越狱跳过第1、2步**   
 1、在设置中找到 dkvideoPlayer 打开你需要注入的应用开关    
