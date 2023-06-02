@@ -18,8 +18,8 @@ DKVideoPlayer
  大部分视频类APP和直播类APP，具体前往issue查看或添加 [前往查看📲](https://github.com/DKJone/DKVideoPlayer/issues/1)  
 
 #### 安装方式(越狱)：   
- * [x] [越狱安装📲](./dkVideoPlayer)  
- * [x] [非越狱安装📲](./dkvideoLoader)  
+ * [x] [越狱安装📲](./dkVideoPlayer#安装方式越狱)  
+ * [x] [非越狱安装📲](./dkvideoLoader#安装方式越狱)  
 #### 使用方法    
 **非越狱跳过第1、2步**   
 1、在设置中找到 dkvideoPlayer 打开你需要注入的应用开关    
