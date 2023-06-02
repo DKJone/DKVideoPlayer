@@ -1,0 +1,812 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11FB94512A28700A0050200A /* MDConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11FB94502A28700A0050200A /* MDConfig.plist */; };
+		11FB945B2A28700A0050200A /* libdkvideoLoaderDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 11FB945A2A28700A0050200A /* libdkvideoLoaderDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		11FB94602A28700A0050200A /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11FB945F2A28700A0050200A /* JavaScriptCore.framework */; };
+		11FB94622A28700A0050200A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11FB94612A28700A0050200A /* Foundation.framework */; };
+		11FB94642A28700A0050200A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11FB94632A28700A0050200A /* UIKit.framework */; };
+		11FB94692A28700A0050200A /* dkvideoLoaderDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = 11FB94682A28700A0050200A /* dkvideoLoaderDylib.mm */; };
+		11FB946C2A28700A0050200A /* MDConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 11FB946B2A28700A0050200A /* MDConfigManager.h */; };
+		11FB946E2A28700A0050200A /* MDConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FB946D2A28700A0050200A /* MDConfigManager.m */; };
+		11FB94702A28700A0050200A /* MDCycriptManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 11FB946F2A28700A0050200A /* MDCycriptManager.h */; };
+		11FB94722A28700A0050200A /* MDCycriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FB94712A28700A0050200A /* MDCycriptManager.m */; };
+		11FB94742A28700A0050200A /* MDMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 11FB94732A28700A0050200A /* MDMethodTrace.h */; };
+		11FB94762A28700A0050200A /* MDMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FB94752A28700A0050200A /* MDMethodTrace.m */; };
+		11FB94792A28700A0050200A /* a1a2-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = 11FB94782A28700A0050200A /* a1a2-selectortramps-arm.s */; };
+		11FB947B2A28700A0050200A /* a1a2-selectortramps-arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = 11FB947A2A28700A0050200A /* a1a2-selectortramps-arm64.s */; };
+		11FB947D2A28700A0050200A /* a1a2-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = 11FB947C2A28700A0050200A /* a1a2-selectortramps-i386.s */; };
+		11FB947F2A28700A0050200A /* a1a2-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = 11FB947E2A28700A0050200A /* a1a2-selectortramps-x86_64.s */; };
+		11FB94812A28700A0050200A /* a2a3-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = 11FB94802A28700A0050200A /* a2a3-selectortramps-arm.s */; };
+		11FB94832A28700A0050200A /* a2a3-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = 11FB94822A28700A0050200A /* a2a3-selectortramps-i386.s */; };
+		11FB94852A28700A0050200A /* a2a3-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = 11FB94842A28700A0050200A /* a2a3-selectortramps-x86_64.s */; };
+		11FB94872A28700A0050200A /* OCMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 11FB94862A28700A0050200A /* OCMethodTrace.h */; };
+		11FB94892A28700B0050200A /* OCMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FB94882A28700A0050200A /* OCMethodTrace.m */; };
+		11FB948B2A28700B0050200A /* OCSelectorTrampolines.h in Headers */ = {isa = PBXBuildFile; fileRef = 11FB948A2A28700B0050200A /* OCSelectorTrampolines.h */; };
+		11FB948D2A28700B0050200A /* OCSelectorTrampolines.mm in Sources */ = {isa = PBXBuildFile; fileRef = 11FB948C2A28700B0050200A /* OCSelectorTrampolines.mm */; };
+		11FB94912A28700B0050200A /* LLDBTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 11FB94902A28700B0050200A /* LLDBTools.h */; };
+		11FB94932A28700B0050200A /* LLDBTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = 11FB94922A28700B0050200A /* LLDBTools.mm */; };
+		11FB94982A28700B0050200A /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FB94972A28700B0050200A /* AntiAntiDebug.m */; };
+		11FB949B2A28700B0050200A /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 11FB949A2A28700B0050200A /* fishhook.c */; };
+		11FB949D2A28700B0050200A /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 11FB949C2A28700B0050200A /* fishhook.h */; };
+		11FB949F2A28700B0050200A /* dkvideoLoaderDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = 11FB949E2A28700B0050200A /* dkvideoLoaderDylib.h */; };
+		11FB94A12A28700B0050200A /* dkvideoLoaderDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FB94A02A28700B0050200A /* dkvideoLoaderDylib.m */; };
+		11FB94B52A288FDE0050200A /* libDKVideo.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 11FB94B32A288F590050200A /* libDKVideo.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11FB945C2A28700A0050200A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11FB943E2A28700A0050200A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11FB94592A28700A0050200A;
+			remoteInfo = dkvideoLoaderDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		11FB94462A28700A0050200A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				11FB945B2A28700A0050200A /* libdkvideoLoaderDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		11FB94492A28700A0050200A /* dkvideoLoader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dkvideoLoader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11FB944C2A28700A0050200A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		11FB944E2A28700A0050200A /* quick-resign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "quick-resign.sh"; sourceTree = "<group>"; };
+		11FB94502A28700A0050200A /* MDConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MDConfig.plist; sourceTree = "<group>"; };
+		11FB94532A28700A0050200A /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; path = "put ipa or app here"; sourceTree = "<group>"; };
+		11FB94542A28700A0050200A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11FB945A2A28700A0050200A /* libdkvideoLoaderDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libdkvideoLoaderDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		11FB945F2A28700A0050200A /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		11FB94612A28700A0050200A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		11FB94632A28700A0050200A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		11FB94672A28700A0050200A /* dkvideoLoaderDylib.xm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = dkvideoLoaderDylib.xm; sourceTree = "<group>"; };
+		11FB94682A28700A0050200A /* dkvideoLoaderDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = dkvideoLoaderDylib.mm; sourceTree = "<group>"; };
+		11FB946B2A28700A0050200A /* MDConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDConfigManager.h; sourceTree = "<group>"; };
+		11FB946D2A28700A0050200A /* MDConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDConfigManager.m; sourceTree = "<group>"; };
+		11FB946F2A28700A0050200A /* MDCycriptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDCycriptManager.h; sourceTree = "<group>"; };
+		11FB94712A28700A0050200A /* MDCycriptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDCycriptManager.m; sourceTree = "<group>"; };
+		11FB94732A28700A0050200A /* MDMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDMethodTrace.h; sourceTree = "<group>"; };
+		11FB94752A28700A0050200A /* MDMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDMethodTrace.m; sourceTree = "<group>"; };
+		11FB94782A28700A0050200A /* a1a2-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-arm.s"; sourceTree = "<group>"; };
+		11FB947A2A28700A0050200A /* a1a2-selectortramps-arm64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-arm64.s"; sourceTree = "<group>"; };
+		11FB947C2A28700A0050200A /* a1a2-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-i386.s"; sourceTree = "<group>"; };
+		11FB947E2A28700A0050200A /* a1a2-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		11FB94802A28700A0050200A /* a2a3-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-arm.s"; sourceTree = "<group>"; };
+		11FB94822A28700A0050200A /* a2a3-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-i386.s"; sourceTree = "<group>"; };
+		11FB94842A28700A0050200A /* a2a3-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		11FB94862A28700A0050200A /* OCMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMethodTrace.h; sourceTree = "<group>"; };
+		11FB94882A28700A0050200A /* OCMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMethodTrace.m; sourceTree = "<group>"; };
+		11FB948A2A28700B0050200A /* OCSelectorTrampolines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCSelectorTrampolines.h; sourceTree = "<group>"; };
+		11FB948C2A28700B0050200A /* OCSelectorTrampolines.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OCSelectorTrampolines.mm; sourceTree = "<group>"; };
+		11FB948E2A28700B0050200A /* selectortramps.mac */ = {isa = PBXFileReference; lastKnownFileType = text; path = selectortramps.mac; sourceTree = "<group>"; };
+		11FB94902A28700B0050200A /* LLDBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLDBTools.h; sourceTree = "<group>"; };
+		11FB94922A28700B0050200A /* LLDBTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LLDBTools.mm; sourceTree = "<group>"; };
+		11FB94952A28700B0050200A /* dkvideoLoaderDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "dkvideoLoaderDylib-Prefix.pch"; path = "../dkvideoLoaderDylib-Prefix.pch"; sourceTree = "<group>"; };
+		11FB94972A28700B0050200A /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AntiAntiDebug.m; sourceTree = "<group>"; };
+		11FB949A2A28700B0050200A /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+		11FB949C2A28700B0050200A /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		11FB949E2A28700B0050200A /* dkvideoLoaderDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dkvideoLoaderDylib.h; sourceTree = "<group>"; };
+		11FB94A02A28700B0050200A /* dkvideoLoaderDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dkvideoLoaderDylib.m; sourceTree = "<group>"; };
+		11FB94B32A288F590050200A /* libDKVideo.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libDKVideo.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11FB94432A28700A0050200A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11FB94572A28700A0050200A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11FB94602A28700A0050200A /* JavaScriptCore.framework in Frameworks */,
+				11FB94642A28700A0050200A /* UIKit.framework in Frameworks */,
+				11FB94622A28700A0050200A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11FB943D2A28700A0050200A = {
+			isa = PBXGroup;
+			children = (
+				11FB944B2A28700A0050200A /* dkvideoLoader */,
+				11FB94652A28700A0050200A /* dkvideoLoaderDylib */,
+				11FB945E2A28700A0050200A /* Frameworks */,
+				11FB944A2A28700A0050200A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		11FB944A2A28700A0050200A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11FB94492A28700A0050200A /* dkvideoLoader.app */,
+				11FB945A2A28700A0050200A /* libdkvideoLoaderDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11FB944B2A28700A0050200A /* dkvideoLoader */ = {
+			isa = PBXGroup;
+			children = (
+				11FB944C2A28700A0050200A /* icon.png */,
+				11FB94542A28700A0050200A /* Info.plist */,
+				11FB944D2A28700A0050200A /* Scripts */,
+				11FB944F2A28700A0050200A /* Config */,
+				11FB94522A28700A0050200A /* TargetApp */,
+			);
+			path = dkvideoLoader;
+			sourceTree = "<group>";
+		};
+		11FB944D2A28700A0050200A /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				11FB944E2A28700A0050200A /* quick-resign.sh */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		11FB944F2A28700A0050200A /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				11FB94502A28700A0050200A /* MDConfig.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		11FB94522A28700A0050200A /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				11FB94532A28700A0050200A /* put ipa or app here */,
+			);
+			path = TargetApp;
+			sourceTree = "<group>";
+		};
+		11FB945E2A28700A0050200A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11FB945F2A28700A0050200A /* JavaScriptCore.framework */,
+				11FB94612A28700A0050200A /* Foundation.framework */,
+				11FB94632A28700A0050200A /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		11FB94652A28700A0050200A /* dkvideoLoaderDylib */ = {
+			isa = PBXGroup;
+			children = (
+				11FB94B32A288F590050200A /* libDKVideo.dylib */,
+				11FB949E2A28700B0050200A /* dkvideoLoaderDylib.h */,
+				11FB94A02A28700B0050200A /* dkvideoLoaderDylib.m */,
+				11FB94662A28700A0050200A /* Logos */,
+				11FB946A2A28700A0050200A /* Config */,
+				11FB94772A28700A0050200A /* Trace */,
+				11FB948F2A28700B0050200A /* Tools */,
+				11FB94962A28700B0050200A /* AntiAntiDebug */,
+				11FB94992A28700B0050200A /* fishhook */,
+				11FB94942A28700B0050200A /* Supporting Files */,
+			);
+			path = dkvideoLoaderDylib;
+			sourceTree = "<group>";
+		};
+		11FB94662A28700A0050200A /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				11FB94672A28700A0050200A /* dkvideoLoaderDylib.xm */,
+				11FB94682A28700A0050200A /* dkvideoLoaderDylib.mm */,
+			);
+			path = Logos;
+			sourceTree = "<group>";
+		};
+		11FB946A2A28700A0050200A /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				11FB946B2A28700A0050200A /* MDConfigManager.h */,
+				11FB946D2A28700A0050200A /* MDConfigManager.m */,
+				11FB946F2A28700A0050200A /* MDCycriptManager.h */,
+				11FB94712A28700A0050200A /* MDCycriptManager.m */,
+				11FB94732A28700A0050200A /* MDMethodTrace.h */,
+				11FB94752A28700A0050200A /* MDMethodTrace.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		11FB94772A28700A0050200A /* Trace */ = {
+			isa = PBXGroup;
+			children = (
+				11FB94782A28700A0050200A /* a1a2-selectortramps-arm.s */,
+				11FB947A2A28700A0050200A /* a1a2-selectortramps-arm64.s */,
+				11FB947C2A28700A0050200A /* a1a2-selectortramps-i386.s */,
+				11FB947E2A28700A0050200A /* a1a2-selectortramps-x86_64.s */,
+				11FB94802A28700A0050200A /* a2a3-selectortramps-arm.s */,
+				11FB94822A28700A0050200A /* a2a3-selectortramps-i386.s */,
+				11FB94842A28700A0050200A /* a2a3-selectortramps-x86_64.s */,
+				11FB94862A28700A0050200A /* OCMethodTrace.h */,
+				11FB94882A28700A0050200A /* OCMethodTrace.m */,
+				11FB948A2A28700B0050200A /* OCSelectorTrampolines.h */,
+				11FB948C2A28700B0050200A /* OCSelectorTrampolines.mm */,
+				11FB948E2A28700B0050200A /* selectortramps.mac */,
+			);
+			path = Trace;
+			sourceTree = "<group>";
+		};
+		11FB948F2A28700B0050200A /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				11FB94902A28700B0050200A /* LLDBTools.h */,
+				11FB94922A28700B0050200A /* LLDBTools.mm */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		11FB94942A28700B0050200A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				11FB94952A28700B0050200A /* dkvideoLoaderDylib-Prefix.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		11FB94962A28700B0050200A /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				11FB94972A28700B0050200A /* AntiAntiDebug.m */,
+			);
+			path = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		11FB94992A28700B0050200A /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				11FB949A2A28700B0050200A /* fishhook.c */,
+				11FB949C2A28700B0050200A /* fishhook.h */,
+			);
+			path = fishhook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		11FB94582A28700A0050200A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11FB94702A28700A0050200A /* MDCycriptManager.h in Headers */,
+				11FB94742A28700A0050200A /* MDMethodTrace.h in Headers */,
+				11FB949D2A28700B0050200A /* fishhook.h in Headers */,
+				11FB949F2A28700B0050200A /* dkvideoLoaderDylib.h in Headers */,
+				11FB94912A28700B0050200A /* LLDBTools.h in Headers */,
+				11FB946C2A28700A0050200A /* MDConfigManager.h in Headers */,
+				11FB948B2A28700B0050200A /* OCSelectorTrampolines.h in Headers */,
+				11FB94872A28700A0050200A /* OCMethodTrace.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		11FB94482A28700A0050200A /* dkvideoLoader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11FB94A72A28700B0050200A /* Build configuration list for PBXNativeTarget "dkvideoLoader" */;
+			buildPhases = (
+				11FB94422A28700A0050200A /* Sources */,
+				11FB94432A28700A0050200A /* Frameworks */,
+				11FB94442A28700A0050200A /* ShellScript */,
+				11FB94452A28700A0050200A /* Resources */,
+				11FB94462A28700A0050200A /* CopyFiles */,
+				11FB94472A28700A0050200A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11FB945D2A28700A0050200A /* PBXTargetDependency */,
+			);
+			name = dkvideoLoader;
+			productName = dkvideoLoader;
+			productReference = 11FB94492A28700A0050200A /* dkvideoLoader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		11FB94592A28700A0050200A /* dkvideoLoaderDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11FB94A42A28700B0050200A /* Build configuration list for PBXNativeTarget "dkvideoLoaderDylib" */;
+			buildPhases = (
+				11FB94552A28700A0050200A /* ShellScript */,
+				11FB94562A28700A0050200A /* Sources */,
+				11FB94572A28700A0050200A /* Frameworks */,
+				11FB94582A28700A0050200A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dkvideoLoaderDylib;
+			productName = dkvideoLoaderDylib;
+			productReference = 11FB945A2A28700A0050200A /* libdkvideoLoaderDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11FB943E2A28700A0050200A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					11FB94482A28700A0050200A = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					11FB94592A28700A0050200A = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 11FB94412A28700A0050200A /* Build configuration list for PBXProject "dkvideoLoader" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11FB943D2A28700A0050200A;
+			productRefGroup = 11FB944A2A28700A0050200A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11FB94482A28700A0050200A /* dkvideoLoader */,
+				11FB94592A28700A0050200A /* dkvideoLoaderDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11FB94452A28700A0050200A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11FB94B52A288FDE0050200A /* libDKVideo.dylib in Resources */,
+				11FB94512A28700A0050200A /* MDConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11FB94442A28700A0050200A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh\n";
+		};
+		11FB94472A28700A0050200A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		11FB94552A28700A0050200A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11FB94422A28700A0050200A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11FB94562A28700A0050200A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11FB94722A28700A0050200A /* MDCycriptManager.m in Sources */,
+				11FB947B2A28700A0050200A /* a1a2-selectortramps-arm64.s in Sources */,
+				11FB94792A28700A0050200A /* a1a2-selectortramps-arm.s in Sources */,
+				11FB947F2A28700A0050200A /* a1a2-selectortramps-x86_64.s in Sources */,
+				11FB94892A28700B0050200A /* OCMethodTrace.m in Sources */,
+				11FB946E2A28700A0050200A /* MDConfigManager.m in Sources */,
+				11FB949B2A28700B0050200A /* fishhook.c in Sources */,
+				11FB94982A28700B0050200A /* AntiAntiDebug.m in Sources */,
+				11FB948D2A28700B0050200A /* OCSelectorTrampolines.mm in Sources */,
+				11FB947D2A28700A0050200A /* a1a2-selectortramps-i386.s in Sources */,
+				11FB94832A28700A0050200A /* a2a3-selectortramps-i386.s in Sources */,
+				11FB94812A28700A0050200A /* a2a3-selectortramps-arm.s in Sources */,
+				11FB94692A28700A0050200A /* dkvideoLoaderDylib.mm in Sources */,
+				11FB94A12A28700B0050200A /* dkvideoLoaderDylib.m in Sources */,
+				11FB94932A28700B0050200A /* LLDBTools.mm in Sources */,
+				11FB94852A28700A0050200A /* a2a3-selectortramps-x86_64.s in Sources */,
+				11FB94762A28700A0050200A /* MDMethodTrace.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11FB945D2A28700A0050200A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11FB94592A28700A0050200A /* dkvideoLoaderDylib */;
+			targetProxy = 11FB945C2A28700A0050200A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		11FB94A22A28700B0050200A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		11FB94A32A28700B0050200A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11FB94A52A28700B0050200A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NL54V6A3P5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "dkvideoLoaderDylib/dkvideoLoaderDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libdkvideoLoaderDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+					"$(PROJECT_DIR)/dkvideoLoaderDylib",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"dkvideoLoaderDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+					"-lcycript",
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		11FB94A62A28700B0050200A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = NL54V6A3P5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "dkvideoLoaderDylib/dkvideoLoaderDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libdkvideoLoaderDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+					"$(PROJECT_DIR)/dkvideoLoaderDylib",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"dkvideoLoaderDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		11FB94A82A28700B0050200A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NL54V6A3P5;
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/dkvideoLoaderDylib",
+				);
+				MARKETING_VERSION = 1.0;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dkjone.dkvideoLoader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		11FB94A92A28700B0050200A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NL54V6A3P5;
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/dkvideoLoaderDylib",
+				);
+				MARKETING_VERSION = 1.0;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dkjone.dkvideoLoader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11FB94412A28700A0050200A /* Build configuration list for PBXProject "dkvideoLoader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11FB94A22A28700B0050200A /* Debug */,
+				11FB94A32A28700B0050200A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11FB94A42A28700B0050200A /* Build configuration list for PBXNativeTarget "dkvideoLoaderDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11FB94A52A28700B0050200A /* Debug */,
+				11FB94A62A28700B0050200A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11FB94A72A28700B0050200A /* Build configuration list for PBXNativeTarget "dkvideoLoader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11FB94A82A28700B0050200A /* Debug */,
+				11FB94A92A28700B0050200A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11FB943E2A28700A0050200A /* Project object */;
+}

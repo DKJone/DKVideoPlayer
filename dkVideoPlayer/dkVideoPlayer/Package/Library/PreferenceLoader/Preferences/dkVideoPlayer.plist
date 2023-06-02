@@ -1,0 +1,30 @@
+entry = {
+  bundle = AppList;
+  cell = PSLinkCell;
+  icon = "/Library/PreferenceLoader/Preferences/icon.png";
+  isController = 1;
+  label = DKVideoPlayer;
+  ALSettingsPath = "/var/mobile/Library/Preferences/com.dkjone.dkplayer.plist";
+  ALSettingsKeyPrefix = "DKVideoEnable--";
+  ALChangeNotification = "com.dkjone.dkplayer.settingschanged";
+  ALSettingsDefaultValue = 0;
+  ALSectionDescriptors = (
+
+      {
+        title = "用户应用";
+        predicate = "(isSystemApplication = FALSE)";
+        "cell-class-name" = "ALSwitchCell";
+        "icon-size" = 29;
+        "suppress-hidden-apps" = 1;
+
+      },
+      {
+        title = "越狱/系统 应用";
+        predicate = "(isSystemApplication = TRUE)";
+        "cell-class-name" = "ALSwitchCell";
+        "icon-size" = 29;
+        "suppress-hidden-apps" = 1;
+        "footer-title" = "© buginux create for flexloader";
+      }
+  );
+};
